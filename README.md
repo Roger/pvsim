@@ -6,8 +6,8 @@
 
 ### Prerequisites
 
-docker >= 17.05 (needs this version, to use multi-stage builds)
-docker-compose  (to build and run images)
+* docker >= 17.05 (needs this version, to use multi-stage builds)
+* docker-compose  (to build and run images)
 
 ### Components(containers)
 
