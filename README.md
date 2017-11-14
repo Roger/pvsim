@@ -26,7 +26,7 @@ from Control Panel.
 
 #### API
 
-This container only starts a socketio server in flask, but al the events are sent from PV, using
+This container only starts a socketio server in flask, but all the events are sent from PV, using
 socketio multiprocess support, using rabbitmq.
 
 #### Static - nginx and react application(Control Panel)
