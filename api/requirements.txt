@@ -1,0 +1,11 @@
+kombu==4.1.0
+Flask==0.12.2
+Flask-SocketIO==2.9.2
+gunicorn==18
+gevent==1.2.2
+gevent-websocket==0.10.1
+ujson==1.35 
+wsaccel==0.6.2
+pytest==3.2.3
+pytest-cov==2.5.1
+pytest-mock==1.6.3

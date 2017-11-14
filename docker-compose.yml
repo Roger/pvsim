@@ -1,0 +1,34 @@
+version: '3'
+services:
+  grid:
+    build: ./grid
+    env_file: .env
+    depends_on:
+      - rabbitmq
+  pv:
+    build: ./pv
+    env_file: .env
+    depends_on:
+      - rabbitmq
+    volumes:
+      - "./files/:/usr/src/app/files/"
+  api:
+    build: ./api
+    env_file: .env
+    depends_on:
+      - rabbitmq
+
+  static:
+    build: ./static
+    ports:
+      - "4242:80"
+    depends_on:
+      - api
+    volumes:
+      - "./files/:/usr/share/nginx/html/files/"
+
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"

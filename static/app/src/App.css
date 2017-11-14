@@ -1,0 +1,21 @@
+@import "~normalize.css/normalize.css";
+@import "~@blueprintjs/core/dist/blueprint.css";
+@import "~@blueprintjs/datetime/dist/blueprint-datetime.css";
+
+body {
+  background: #EBF1F5;
+}
+
+.offset-slide {
+  height: 300px!important;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.pt-table.fullwidth {
+  width: 100%;
+}
+
+.content {
+  width: 1024px;
+  margin: auto;
+}
